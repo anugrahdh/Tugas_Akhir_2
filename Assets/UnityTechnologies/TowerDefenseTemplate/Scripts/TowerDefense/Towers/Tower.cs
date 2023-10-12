@@ -152,6 +152,7 @@ namespace TowerDefense.Towers
 		public int GetSellLevel(int level)
 		{
 			// sell for full price if waves haven't started yet
+			/*
 			if (LevelManager.instance.levelState == LevelState.Building)
 			{
 				int cost = 0;
@@ -162,6 +163,8 @@ namespace TowerDefense.Towers
 
 				return cost;
 			}
+			*/
+
 			return levels[currentLevel].sell;
 		}
 
